@@ -4,14 +4,14 @@
       <div class="navbar-item">
         <div class="buttons">
           <a
-            href="https://github.com/johnpapa/vue-getting-started"
+            :href="github"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i class="fab fa-github fa-2x" aria-hidden="true"></i>
           </a>
           <a
-            href="https://twitter.com/john_papa"
+            :href="twitter"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -22,3 +22,14 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: "HeaderbarLinks",
+  data() {
+    return {
+      github: 'https://github.com/johnpapa/vue-getting-started',
+      twitter: 'https://twitter.com/john_papa'
+    }
+  },
+}
+</script>
